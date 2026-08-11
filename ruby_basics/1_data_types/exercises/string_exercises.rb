@@ -5,7 +5,7 @@ end
 
 def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
-    "Hello" + string
+    "Hello" + " " + string + "!"
 end
 
 def substrings(word)
@@ -20,7 +20,7 @@ end
 
 def uppercase(string)
   # uppercase all letters in the string
-  string.uppercase
+  string.upcase
 end
 
 def downcase(string)
@@ -30,6 +30,7 @@ end
 
 def empty_string(string)
   # return true if the string is empty
+  string.empty?
 end
 
 def string_length(string)
@@ -44,5 +45,5 @@ end
 
 def space_remover(string)
   # remove all the spaces in the string using gsub
-  string.gsub
+  string.gsub(" ", "")
 end
